@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: Grid2 |cd1ff7d0aStatusAbsorbs|r
 ## Notes: Restores absorb-below-max-hp, absorb-above-max-hp, and absorb-total statuses to Grid2.
 
