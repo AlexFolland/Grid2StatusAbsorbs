@@ -15,6 +15,11 @@ local absorbAboveMaxHP_cache = setmetatable( {}, {__index = function() return 0 
 local absorbBelowMaxHP_cache = setmetatable( {}, {__index = function() return 0 end} )
 
 eventFrame:SetScript("OnEvent", function(self, event, unit)
+    --print("Grid2StatusAbsorbs: "..event..(unit and " "..tostring(unit) or ""))
+
+    --WoW 7.1 introduced a bug which causes UNIT_HEALTH to sometimes fire without a unitID, so this line ignores such events
+    if not unit then return end
+
 	local hp = UnitHealth(unit)
 	local maxHP = UnitHealthMax(unit)
 	local shield = UnitGetTotalAbsorbs(unit)
