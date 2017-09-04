@@ -1,6 +1,6 @@
-## Interface: 70200
+## Interface: 70300
 ## Title: Grid2 |cd1ff7d0aStatusAbsorbs|r
-## Notes: Restores absorb-below-max-hp, absorb-above-max-hp, and absorb-total statuses to Grid2.
+## Notes: Restores absorb-below-max-hp, absorb-above-max-hp, and absorb-total statuses to Grid2
 
 ## Dependencies: Grid2
 
